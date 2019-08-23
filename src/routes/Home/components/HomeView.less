@@ -1,0 +1,53 @@
+@cardWidth: 379px;
+@cardHeight: 526px;
+@cardRoles: 9;
+
+.timer {
+	font-size: 10em;
+	font-weight: 700;
+	line-height: 1em;
+}
+
+.image {
+	width: (1 / 9) * 100%;
+
+	opacity: 0.3;
+
+	&.selected {
+		opacity: 1;
+	}
+}
+
+.field {
+	padding-left: 1em;
+	padding-right: 1em;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.controls {
+	display: table;
+
+	.row {
+
+		display: table-row;
+
+		> * {
+			display: table-cell;
+		}
+	}
+
+	button {
+		width: 6em;
+		font-size: 2em;
+		font-weight: 700;
+		vertical-align: middle;
+	}
+
+	input {
+		vertical-align: middle;
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+}
